@@ -1,0 +1,237 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Ruchit}{Bhardwaj}{ 
+\href{mailto:ruch0401@gmail.com}{ruch0401@gmail.com} | \href{http://shorturl.at/qwJY6}{linkedin.com/in/ruch0401/} | \href{http://shorturl.at/oqsK8}{github.com/ruch0401} | +1 (984) 810-9663
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Master of Science}
+\subsection{in Computer Science}
+\descript{University of Southern California, Los Angeles, California}
+\location{Exp. May 2023}
+\sectionsep
+
+
+\subsection{Bachelor of Engineering}
+\subsection{in Computer Science} %dirty hack for successful compilation and preserve formatting
+\descript{Shri Ramdeobaba College of Engineering and Management, \\Nagpur, India}
+\location{Batch of 2019 | CGPA: 9.89}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCHWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research Work}
+\subsection{IEEE}
+\href{http://shorturl.at/rzMNZ}{\custombold{Mirr-Active: An Artificially Intelligent Interactive Mirror}} \\
+Bahendwar I.A., Bhardwaj R.P., \\Rathod V.S., Hindaria S.S. \\(2018) International Conference \\on Advanced Computation and \\Telecommunication (ICACAT),\\ 978-1-5386-5367-8
+\sectionsep
+
+\subsection{JAC}
+\href{http://shorturl.at/bkADF}{\custombold{Security in Distributed Systems}} \\\
+Naidu D., Bahendwar I.A., Bhardwaj R.P., Singh A.M., (Volume 8, Issue 2, February 2019), Journal of Analysis and \\Computations (JAC), 0973-2861
+\sectionsep
+
+\subsection{IJIRCST}
+\href{http://shorturl.at/dnAG0}{\custombold{Amortized Complexity Analysis for Red-Black trees and Splay Trees}} \\
+Bhardwaj R.P., Bahendwar I.A., Mundada \\S.G., (Volume- 6, Issue-6, November-2018), International Journal of Innovative \\Research in Computer Science \& \\Technology (IJIRCST), 2347-5552
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Technical Skills}
+\subsection{Programming}
+Java \textbullet{} Spark \textbullet{} Python\\
+\sectionsep
+\subsection{Frameworks}
+Jersey RESTful Web Services Framework (JAX-RS Implementation)\textbullet{} Django
+\sectionsep
+\subsection{Web Technologies}
+HTML \textbullet{} CSS \textbullet{} JavaScript
+\sectionsep
+\subsection{Databases}
+PostgreSQL \textbullet{} Oracle \textbullet{}
+\sectionsep
+\subsection{Others}
+AWS \textbullet{} Maven \textbullet{} Shell Script \textbullet{} Batch Script \textbullet{} IDEA Intellij \textbullet{} TeamCity\textbullet{} BitBucket \textbullet{} PgAdmin
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{ZS Associates India Pvt. Ltd.}
+\descript{}
+\sectionsep
+\runsubsection{}
+\descript{Software Engineer - Applications | July 2020 - July 2021}
+\begin{bullets}
+\item Coordinated with clients to identify their goals and needs and developed backend REST APIs using JAX-RS implementation of the Jersey Framework to cater to the client requirements.
+\item Identified and fixed security vulnerabilities in the application, thereby making the application hacker-proof, robust and resilient.
+\item Created and managed TeamCity builds to automate the clean-up of logs and cache, thereby improving the API performance times by 50\%.
+\end{bullets}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+\descript{Software Engineer - Test | January 2019 - June 2020}
+\begin{bullets}
+\item Revamped the Test Suites to automate repetitive tasks using a Behavioral Driven Development strategy i.e., Cucumber Framework covering 90\% of the product features.
+\item Performed functional testing of features that included close interaction with Amazon Web Service such as S3, EMR, CloudWatch.
+\item Attained in-depth insight into industry-accepted practices such as Agile Methodology and Software Development Life-cycle.
+\end{bullets}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\sectionsep
+
+
+\runsubsection{Indian Institute of Technology, Bombay}
+\descript{}
+\sectionsep
+\runsubsection{}
+\descript{Software Developer Intern | May 2018 - July 2018}
+
+\begin{bullets}
+\item Developed a framework to map CC architecture to DSpace architecture.
+\item Leveraged the xhtml2pdf library in python to create an application, DSpaceX, that standardized the articles in Collaborative Community to PDFs.
+\item Created automation suites using Selenium for product maintainability purposes.
+\end{bullets}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{Nagpur University E-Notice}
+\descript{}
+Built an android app using Android Studio, CSS, JavaScript, PHP and Firebase for generation and distribution of notices within Rashtrasant Tukdoji Maharaj Nagpur University. The app is available on Play Store with over 100+ downloads.
+\sectionsep
+
+\runsubsection{Device Automation and Control by Using ESP8266 (DACE)}
+\descript{}
+Developed an IoT-based device using ESP8266 Wi-Fi module, capable of taking temperature readings and controlling electric devices such as DC motors. Scripted an Amazon Alexa skill to control smart devices via voice command.
+\sectionsep
+
+\runsubsection{Mirr-Active : An Artificially Intelligent Smart Mirror}
+\descript{}
+Implemented an AI module to work as a personal smart assistant. Used NLP to establish interaction between humans and the AI Bot. Leveraged the service wit.ai to train the AI Bot.
+\sectionsep
+
+\runsubsection{Tribal Tourism}
+\descript{| Smart India Hackathon 2018 Finals}
+Developed 3 android apps that worked in tandem to bolster tourism opportunities in tribal and north-eastern parts of the country. Created a shared database along all the three apps using Firebase.
+\sectionsep
+
+\runsubsection{Medical Analyzer in AR (M.A.V)}
+\descript{| Final Year Project}
+Spearheaded the development of an Augmented Reality module that allowed the 3D projection of human anatomy to enable doctors to view the patient's vitals in a more accurate fashion. Tweaked an object detection module to tailor it towards identifying hospital equipment.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ACHIEVEMENTS AND ACTIVITIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Achievements and Activities} 
+% All  India GATE-2016 Rank: 2127 Percentile: 98.3\%ile\\
+% Active on programming sites -CodeChef, HackerRank\\
+% Amcat Jan-2016 Topper. \\
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ 
+
+\end{minipage} 
+\end{document}
