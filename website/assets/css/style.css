@@ -796,12 +796,18 @@ p {
     padding-top: 70px;
     padding-bottom: 80px; } }
 
+.about-content {
+  text-align: center;
+}
+
 .about-content .about-title {
   font-size: 18px;
   font-weight: 500;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  margin-top: 5%; }
 .about-content ul {
-  padding-top: 15px; }
+  padding-top: 15px;
+  text-align: center; }
   .about-content ul li {
     width: 50%;
     float: left;
