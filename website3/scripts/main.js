@@ -1,6 +1,7 @@
 // Add your javascript here
 // Don't forget to add it into respective layouts where this js file is needed
 
+// function to calculate my age dynamically
 $(document).ready(function() {
   document.getElementById("calculated-date").innerHTML = calculateAge(new Date(1997, 1, 4));
 });
@@ -10,6 +11,27 @@ function calculateAge(dob) {
   var age_dt = new Date(diff_ms); 
   return Math.abs(age_dt.getUTCFullYear() - 1970);
 }
+
+// function for forward and reverse slider
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("card");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";
+}
+
+
 
 $(document).ready(function() {
   AOS.init( {
