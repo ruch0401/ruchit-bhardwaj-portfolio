@@ -2,6 +2,16 @@
 // Don't forget to add it into respective layouts where this js file is needed
 
 $(document).ready(function() {
+  document.getElementById("calculated-date").innerHTML = calculateAge(new Date(1997, 1, 4));
+});
+
+function calculateAge(dob) {
+  var diff_ms = Date.now() - dob.getTime();
+  var age_dt = new Date(diff_ms); 
+  return Math.abs(age_dt.getUTCFullYear() - 1970);
+}
+
+$(document).ready(function() {
   AOS.init( {
     // uncomment below for on-scroll animations to played only once
     // once: true  
