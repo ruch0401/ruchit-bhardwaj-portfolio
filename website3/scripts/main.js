@@ -22,7 +22,8 @@ function plusDivs(n) {
 
 function showDivs(n) {
   var i;
-  var x = document.getElementsByClassName("card");
+  // var x = document.getElementsByClassName("card");
+  var x = document.getElementsByName("skills-card");
   if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
