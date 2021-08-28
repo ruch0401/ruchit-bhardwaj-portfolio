@@ -1260,7 +1260,7 @@
   .show > .btn-primary.dropdown-toggle,
   .show > .btn-primary.dropdown-toggle:focus,
   .show > .btn-primary.dropdown-toggle:hover {
-    background-color: #40a249;
+    background-color: rgb(36, 159, 216);
     color: #FFFFFF;
     box-shadow: none; }
   .btn-primary:hover {
