@@ -5406,3 +5406,8 @@ a.credit {
   .flip-card {
     margin-top: 20px;
   }
+
+  .flip-card-front, .h6, .h4, .p {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
