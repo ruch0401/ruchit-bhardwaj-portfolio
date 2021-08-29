@@ -3471,16 +3471,11 @@ Created using IcoMoon - icomoon.io
   height: 10px;
   line-height: 30px;
   border-radius: 50%;
+  margin-top: 5px;
   text-align: center;
   margin-right: 3px;
   margin-left: 3px;
-  text-indent: unset;
   cursor: pointer;
-  background-color: #fff;
-  background-clip: unset;
-  border-top: 0;
-  border-bottom: 0;
-  opacity: .5;
   transition: opacity .6s ease;
 } */
 
@@ -5346,4 +5341,68 @@ a.credit {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+
+  .flip-card {
+    background-color: transparent;
+    width: auto;
+    height: 360px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: white;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  hr {
+    border-color: white;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .rb-ts-controls li{
+    background-color: rgb(29, 71, 90);
+  }
+
+  .rb-ts-controls, .rb-ts-references {
+    bottom: -5px;
+  }
+
+  .rb-ts-controls li:hover, .rb-ts-controls li:visited, .rb-ts-controls li.active, .rb-ts-references li:hover, .rb-ts-references li:visited, .rb-ts-references li:active{
+    background-color: rgb(118, 142, 153);
+  }
+
+  .flip-card {
+    margin-top: 20px;
   }
