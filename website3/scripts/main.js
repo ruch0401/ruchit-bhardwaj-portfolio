@@ -12,6 +12,15 @@ function calculateAge(dob) {
   return Math.abs(age_dt.getUTCFullYear() - 1970);
 }
 
+function sendEmail() {
+  var name = document.getElementById("name").value;
+  var to = "ruchitbh@usc.edu";
+  var subject = document.getElementById("Subject").value;
+  var subjectWithName =  `${name} | ${subject}`;
+  var message = document.getElementById("message").value;
+  window.open(`mailto:${to}?&subject=${subjectWithName}&body=${message}`);
+}
+
 
 
 $(document).ready(function() {
